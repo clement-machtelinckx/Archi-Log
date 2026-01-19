@@ -4,16 +4,13 @@ package strgame.memento;
 public class CharacterMemento {
     // par défaut cette classe va servir à créer un memento qui sera comme un backup du personnage à un instant t
     // on pourrait conserver l'état complet du personnage dans un cas pratique plus concret, ici on se contentera de ses points de vie
-    private int healthPoints;
+    private final int healthPoints;
 
     public CharacterMemento(int healthPoints) {
-
-        //TODO à compléter
-
+        this.healthPoints = healthPoints;
     }
 
     public int getHealthPoints() {
-
-        // TODO à completer
+        return healthPoints;
     }
 }

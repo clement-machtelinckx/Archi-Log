@@ -2,8 +2,8 @@ package strgame.observer;
 
 // Classe concrète pour un observateur
 public class CharacterObserver implements Observer {
+    @Override
     public void update(String event) {
-        // TODO: Implémentez la réaction à un événement
-        // Basez vous sur la classe de Test pour deviner ce que vous devez réaliser
+        System.out.println("Observé : " + event);
     }
 }

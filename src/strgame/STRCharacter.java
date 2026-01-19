@@ -15,46 +15,47 @@ public class STRCharacter {
 
     private CombatBehavior combatBehavior;
 
-    private List<Observer> observers = new ArrayList<>();
-
+    private final List<Observer> observers = new ArrayList<>();
 
     public STRCharacter() {
         state = null;
-        healthPoints = 20 ;
-        combatBehavior = null ;
+        healthPoints = 20;
+        combatBehavior = null;
     }
-
 
     /** STRATEGY */
     public void setCombatBehavior(CombatBehavior cb) {
-        // TODO à compléter
+        this.combatBehavior = cb;
     }
 
     public void performCombat() {
-        combatBehavior.execute();
+        if (combatBehavior != null) {
+            combatBehavior.execute();
+        }
     }
 
     /** OBSERVER */
     public void addObserver(Observer o) {
-
-        //TODO à compléter. On ajoute un observateur à la liste
+        if (o != null && !observers.contains(o)) {
+            observers.add(o);
+        }
     }
 
     public void removeObserver(Observer o) {
-
-        //TODO à compléter. On retire un observateur de la liste
+        observers.remove(o);
     }
 
     public void notifyObservers(String event) {
         for (Observer observer : observers) {
-           // TODO à compléter. Il faut déclencher une mise à jour de chaque observateur
+            observer.update(event);
         }
     }
 
     /** STATE */
     public void setState(State state) {
-        //TODO à compléter
+        this.state = state;
     }
+
     public State getState() {
         return state;
     }
@@ -73,6 +74,8 @@ public class STRCharacter {
     }
 
     public void restaureHPFromMemento(CharacterMemento memento) {
-        // TODO à compléter. On récupère les points de vie du memento et on redonne au personnage ce nombre de PV
+        if (memento != null) {
+            this.healthPoints = memento.getHealthPoints();
+        }
     }
 }

@@ -1,0 +1,14 @@
+C:\project_ynov\tp10_strategie\Archi-Log\src\strgame\PatternsTest.java
+C:\project_ynov\tp10_strategie\Archi-Log\src\strgame\STRCharacter.java
+C:\project_ynov\tp10_strategie\Archi-Log\src\strgame\memento\Caretaker.java
+C:\project_ynov\tp10_strategie\Archi-Log\src\strgame\memento\CharacterMemento.java
+C:\project_ynov\tp10_strategie\Archi-Log\src\strgame\observer\CharacterObserver.java
+C:\project_ynov\tp10_strategie\Archi-Log\src\strgame\observer\Observable.java
+C:\project_ynov\tp10_strategie\Archi-Log\src\strgame\observer\Observer.java
+C:\project_ynov\tp10_strategie\Archi-Log\src\strgame\state\NormalState.java
+C:\project_ynov\tp10_strategie\Archi-Log\src\strgame\state\State.java
+C:\project_ynov\tp10_strategie\Archi-Log\src\strgame\state\WoundedState.java
+C:\project_ynov\tp10_strategie\Archi-Log\src\strgame\strategy\AggressiveBehavior.java
+C:\project_ynov\tp10_strategie\Archi-Log\src\strgame\strategy\CombatBehavior.java
+C:\project_ynov\tp10_strategie\Archi-Log\src\strgame\strategy\DefensiveBehavior.java
+C:\project_ynov\tp10_strategie\Archi-Log\src\strgame\strategy\FleeBehavior.java
